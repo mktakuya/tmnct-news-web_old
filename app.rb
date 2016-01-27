@@ -5,6 +5,7 @@ require 'yaml'
 
 class TmNCTNewsWeb < Sinatra::Base
   register Sinatra::Contrib
+  enable :prefixed_redirects
 
   before do
     @config = YAML.load_file('./config/config.yml')

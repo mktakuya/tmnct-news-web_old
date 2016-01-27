@@ -6,7 +6,7 @@
           = @error
 
       h1
-        a href="/"
+        a href=uri("/")
           | TmNCT News
       p
         | 苫小牧高専のニュースをTwitterまたはメールで配信します。
@@ -16,7 +16,7 @@
 
       h2
         | メール配信登録
-      form action="/register" method="POST"
+      form action=uri("/register") method="POST"
         .form-group
           label for="email"
             | メールアドレス
