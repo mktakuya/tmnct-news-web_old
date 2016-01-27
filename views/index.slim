@@ -1,0 +1,30 @@
+.container
+  .row
+    .col-xs-12
+      - if @error
+        p.alert.alert-danger
+          = @error
+
+      h1
+        a href="/"
+          | TmNCT News
+      p
+        | 苫小牧高専のニュースをTwitterまたはメールで配信します。
+      p
+        a href="https://twitter.com/TmNCT_News"
+          | Twitter: @TmNCT_News
+
+      h2
+        | メール配信登録
+      form action="/register" method="POST"
+        .form-group
+          label for="email"
+            | メールアドレス
+          input.form-control name="email" type="email"
+        button.btn.btn-primary type="submit"
+          | 登録する
+
+      p.pull-right
+        a href="/"
+          | TOPへ戻る
+
