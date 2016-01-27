@@ -1,5 +1,8 @@
 config/config.yml
 config/to_addresses.yml
+*.log
+*.pid
+*.sock
 
 ### OSX ###
 .DS_Store
