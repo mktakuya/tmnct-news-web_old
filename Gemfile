@@ -4,6 +4,7 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'thin'
 gem 'slim'
+gem 'unicorn'
 
 group :development do
   gem 'shotgun'
